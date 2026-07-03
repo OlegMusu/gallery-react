@@ -1,0 +1,12 @@
+.gallery-item {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.gallery-img {
+    width: 340px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+}
