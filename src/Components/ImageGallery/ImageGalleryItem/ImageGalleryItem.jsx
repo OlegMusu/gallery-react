@@ -3,10 +3,11 @@ import "./ImageGalleryItem.css"
 
 class ImageGalleryItem extends Component {
     render() {
+        const { image } = this.props;
         return(
             <>
                 <li className="gallery-item">
-                    <img className="gallery-img" src="" alt="" />
+                    <img className="gallery-img" src={image.webformatURL} alt={image.tags} />
                 </li>
             </>
         )

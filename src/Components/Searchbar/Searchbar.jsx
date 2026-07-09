@@ -13,7 +13,11 @@ class Searchbar extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { qwery } = this.state;
+    if (this.state.qwery === "") {
+      "Please enter a search query";
+      return;
+    }
+    this.props.onSubmit(this.state.qwery);
     
   }
 
